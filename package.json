@@ -1,0 +1,22 @@
+{
+  "name": "bbh_homework_wk9",
+  "version": "1.0.0",
+  "description": "README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harben31/bbh_homework_wk9.git"
+  },
+  "author": "Benjamin Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harben31/bbh_homework_wk9/issues"
+  },
+  "homepage": "https://github.com/harben31/bbh_homework_wk9#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
