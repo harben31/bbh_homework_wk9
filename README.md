@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Unlicense](https://img.shields.io/badge/license-Unilicense-blue.svg)](http://unilicense.org/)
 # myProjectTitle
 Table of Contents:
 * [Contributors:](#Contributtors)
@@ -29,7 +29,7 @@ me, myself and I
 ...
 
 ## License-Info:
-undefined
+The Unilicense
 
 ## Questions:
 Email: ...

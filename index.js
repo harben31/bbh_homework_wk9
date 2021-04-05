@@ -48,8 +48,9 @@ const questions = [
         type: "list",
         name: "license",
         message: "Choose a license for your project",
+        
         choices: [
-            "MIT License", "Mozilla Public License 2.0", "The Unilicense", "BSD 2-clause 'simlpified license'", "Eclipse Public License 1.0", "GNU Generic Public License v2.0"
+            "MIT License", "Mozilla Public License 2.0", "The Unilicense", "BSD 2-clause 'simlpified license'", "Eclipse Public License 1.0", "GNU Generic Public License v2.0", "None"
         ],
         default: "MIT License"
     },
@@ -72,10 +73,19 @@ inquirer.prompt(questions).then((answers) => {
 
     answers.license==="MIT License" ? licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
     : answers.license==="Mozilla Public License 2.0" ? licenseBadge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
-    : answers.license==="The Unilicense" ? licenseBadge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+    : answers.license==="The Unilicense" ? licenseBadge = "[![License: Unlicense](https://img.shields.io/badge/license-Unilicense-blue.svg)](http://unilicense.org/)"
     : answers.license==="BSD 2-clause 'simlpified license'" ? licenseBadge = "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)"
     : answers.license==="Eclipse Public License 1.0" ? licenseBadge = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
     : answers.license==="GNU Generic Public License v2.0" ? licenseBadge = "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)" : "dunno"
+    
+    // console.log(answers.license);
+    // if(answers.license!=="none" && answers.license!=="Unlicense" && answers.license!=="GNU"){
+    //     licenseBadge = `[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})`
+    // } else if(answers.license==="Unlicense"){
+    //     licenseBadge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+    // } else {
+    //     licenseBadge = "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-red.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+    // }
 
     fs.writeFile('README.md', 
     `${licenseBadge}
@@ -109,7 +119,7 @@ ${answers.contribution}
 ${answers.test}
 
 ## License-Info:
-${answers.lisence}
+${answers.license}
 
 ## Questions:
 Email: ${answers.email}
