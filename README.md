@@ -1,5 +1,5 @@
-[![License: Unlicense](https://img.shields.io/badge/license-Unilicense-blue.svg)](http://unilicense.org/)
-# myProjectTitle
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+# My New Project
 Table of Contents:
 * [Contributors:](#Contributtors)
 * [Description](#Description)
@@ -11,26 +11,26 @@ Table of Contents:
 * [Questions](#Questions)
     
 ## Contributors: 
-me, myself and I
+John Doe
 
 ## Description:
-...
+Its an App
 
 ## Installation:
-...
+With  computer
 
 ## Usage:
-...
+use it or lose it
 
 ## Contributing:
-...
+ask me nicley
 
 ## Tests:
-...
+test one two three
 
 ## License-Info:
-The Unilicense
+Mozilla Public License 2.0
 
 ## Questions:
-Email: ...
-GitHub: ...
+Email: email@email.email
+GitHub: username
