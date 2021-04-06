@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+//generating questions
 const questions = [
     {
         type: "input",
@@ -68,6 +69,7 @@ const questions = [
     },
 ]
 
+//creating badges and links
 inquirer.prompt(questions).then((answers) => {
     let licenseBadge;
 
@@ -78,7 +80,9 @@ inquirer.prompt(questions).then((answers) => {
     : answers.license==="Eclipse Public License 1.0" ? licenseBadge = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
     : answers.license==="GNU Generic Public License v2.0" ? licenseBadge = "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)" : ""
 
-    fs.writeFile('README.md', 
+
+    //Navitages and creates new file and generates the mark down for the readme
+    fs.writeFile('./new_readme/README.md', 
     `${licenseBadge}
 # ${answers.title}
 Table of Contents:
