@@ -113,8 +113,8 @@ ${answers.test}
 ${answers.license}
 
 ## Questions:
-Email: ${answers.email}
-GitHub: ${answers.ghUsername}`, 
+* Email: [${answers.email}](mailto:${answers.email})
+* GitHub: [${answers.ghUsername}](https://www.github.com/${answers.ghUsername})`, 
     (err) => err? console.log(error) : console.log("README created"));
     console.log(answers.email);
 })

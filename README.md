@@ -1,5 +1,5 @@
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-# My New Project
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# myProjectTitle
 Table of Contents:
 * [Contributors:](#Contributtors)
 * [Description](#Description)
@@ -11,26 +11,26 @@ Table of Contents:
 * [Questions](#Questions)
     
 ## Contributors: 
-John Doe
+me, myself and I
 
 ## Description:
-Its an App
+...
 
 ## Installation:
-With  computer
+...
 
 ## Usage:
-use it or lose it
+...
 
 ## Contributing:
-ask me nicley
+...
 
 ## Tests:
-test one two three
+...
 
 ## License-Info:
-Mozilla Public License 2.0
+MIT License
 
 ## Questions:
-Email: email@email.email
-GitHub: username
+* Email: [email@email.email](mailto:email@email.email)
+* GitHub: [...](https://www.github.com/...)
